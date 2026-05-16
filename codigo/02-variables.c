@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
 	printf("--- Enteros ---\n");
@@ -56,6 +57,48 @@ int main() {
 	printf("Los primeros 14 digitos de pi es: %.14lf\n", pi);
 
 	printf("los primeros 12 digitos del numero de euler es: %.12lf\n", e);
+
+	printf("--- Caracteres ---\n");
+
+	// se debe usar ' ' o " " cuando se vaya a poner los caracteres, los caracteres solo pueden tener 1 solo caracter (duh)
+	char grado = 'A';
+	char simbolo = '!';
+	char moneda = '$';
+
+	printf("Tu nota del examen de matematicas es %c\n", grado);
+	printf("Tu simbolo favorito (o tal vez no) es %c\n", simbolo);
+	printf("La moneda que se va a utilizar es %c\n", moneda);
+
+	printf("--- Strings (caracteres) ---");
+
+	// para tener mas de un digito se utiliza char variable[]
+	char nombre[] = "Alessandro";
+	char comida[] = "papas fritas";
+	char email[] = "tuputasexy666@example.com";
+
+	// cuando se usa char variable[] se utiliza %s en vez de %c
+	printf("Hola %s!\n", nombre);
+	printf("Tu comida favorita es %s\n", comida);
+	printf("Tu correo electronico es %s\n", email);
+
+	printf("--- Bools ---");
+	// IMPORTANTE: En los bools se tiene que poner #include <stdbool.h> para que el compilador sepa que usar para poder compilar los bools	
+	// Los bools son binarios, son falsos (false) o positivos (true)
+
+	// se puede usar false o 0 + true o 1, si quieres optimizar el codigo es mejor utilizar numeros
+	bool enLinea = true;
+	
+	// al poner "%d", variableBool te da como resultado un 0 si es false o un 1 si es true
+	printf("%d\n", enLinea);
+
+	// aqui salen los ifs, que luego se usaran mas, pero va a ser despues, esto es solamente para usar los bools
+	// si solo pones if(variableBool) va a ser cuando este en 1 y el else cuando sea 0
+	if(enLinea){
+		printf("Estas en linea\n");
+	}
+	else{
+		printf("Estas offline\n");
+	}
 
 	return 0;
 }
