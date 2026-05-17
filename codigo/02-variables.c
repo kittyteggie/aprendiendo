@@ -69,7 +69,7 @@ int main() {
 	printf("Tu simbolo favorito (o tal vez no) es %c\n", simbolo);
 	printf("La moneda que se va a utilizar es %c\n", moneda);
 
-	printf("--- Strings (caracteres) ---");
+	printf("--- Strings (caracteres) ---\n");
 
 	// para tener mas de un digito se utiliza char variable[]
 	char nombre[] = "Alessandro";
@@ -81,8 +81,9 @@ int main() {
 	printf("Tu comida favorita es %s\n", comida);
 	printf("Tu correo electronico es %s\n", email);
 
-	printf("--- Bools ---");
-	// IMPORTANTE: En los bools se tiene que poner #include <stdbool.h> para que el compilador sepa que usar para poder compilar los bools	
+	printf("--- Bools ---\n");
+	// IMPORTANTE: En los bools se tiene que poner #include <stdbool.h> para que el compilador sepa que usar para poder compilar los bools
+	
 	// Los bools son binarios, son falsos (false) o positivos (true)
 
 	// se puede usar false o 0 + true o 1, si quieres optimizar el codigo es mejor utilizar numeros
@@ -98,6 +99,24 @@ int main() {
 	}
 	else{
 		printf("Estas offline\n");
+	}
+
+	bool estudiante = true;
+
+	if(estudiante){
+		printf("Eres un estudiante\n");
+	}
+	else{
+		printf("No eres un estudiante\n");
+	}
+
+	bool enVenta = false;
+
+	if(enVenta){
+		printf("Este producto esta a la venta\n");
+	}
+	else{
+		printf("Este producto no esta a la venta\n");
 	}
 
 	return 0;
