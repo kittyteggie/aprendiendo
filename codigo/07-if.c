@@ -7,7 +7,9 @@ int main()
 	printf("Pon tu edad: ");
 	scanf("%d", &edad);
 
-	if(edad >= 18){
+	if(edad >= 60){
+		printf("Eres un adulto mayor\n");
+	}else if(edad >= 18){
 		printf("Eres un adulto\n");
 	}
 	else if(edad == 0){
