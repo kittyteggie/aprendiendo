@@ -37,6 +37,9 @@ int main(){
 			else{
 				resultado = num1 / num2;
 			}
+        default:
+            error = 1;
+            error2 = "Operador invalido\n";
 	}
 
 	if(error){
