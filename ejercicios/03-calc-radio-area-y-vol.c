@@ -9,6 +9,8 @@ int main()
 	double volumen = 0.0;
 	const double PI = 3.141592653589793;
 
+	printf("Calculadora de radio, area y volumen\n");
+	printf("------------------------------------\n");
 	printf("Pon el radio: ");
 	scanf("%lf", &radio);
 
