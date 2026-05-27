@@ -24,7 +24,7 @@ int main(){
 			resultado = num1 + num2;
 			break;
 		case '-':
-			if(num1 == 1000000 && num2 == 1000000){
+			if(num1 == 10000 && num2 == 10000){
 				resultado = 8;
 			}else{
 				resultado = num1 - num2;
