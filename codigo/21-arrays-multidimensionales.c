@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main(){
+
   int numeros[][3] = {{1, 2, 3},
                       {4, 5, 6},
-                      {7, 8, 9}};
+                      {7, 8, 9},
+                      {10, 11, 12}};
 
-  for(int i = 0; i < 3; i++){
-    printf("%d ", numeros[i][0]);
-    printf("%d ", numeros[i][1]);
-    printf("%d\n", numeros[i][2]);
+  for(int i = 0; i < 4; i++){
+    for(int j = 0; j < 3; j++){
+      printf("%d ", numeros[i][j]);
+    }
   }
+  printf("\n");
 
   return 0;
 }
